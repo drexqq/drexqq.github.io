@@ -1,0 +1,28 @@
+/* common css */
+.resume {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 300;
+  word-wrap: break-word;
+  word-break: keep-all;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+/* colors */
+.blue {
+  color: #3c78d8;
+}
+
+.gray {
+  color: gray;
+}
+
+@media all and (max-width: 767px) {
+  .profileImg {
+    max-height: 320px;
+  }
+}
+
+.experience .badge {
+  font-weight: 400;
+}
