@@ -450,7 +450,7 @@
                     <h4 class="gray">2020. 09 ~ 2020. 10</h4>
                   </div>
                   <div class="col-md-9 col-12">
-                    <h4>종이의 집<small class="ml-5 blue" onclick='openPdf($(this).data())'
+                    <h4>종이의 집<small class="ml-5 blue views" onclick='openPdf($(this).data())'
                         data-url="./static/pdfs/java-project(paperhouse).pdf">View</small></h4>
                     <i class="gray">비트캠프</i>
                     <ul class="pt-3">
@@ -469,7 +469,7 @@
                     <h4 class="gray">2020. 08 ~ 2020. 08</h4>
                   </div>
                   <div class="col-md-9 col-12">
-                    <h4>Hoboard<small class="ml-5 blue" onclick='openPdf($(this).data())'
+                    <h4>Hoboard<small class="ml-5 blue views" onclick='openPdf($(this).data())'
                         data-url="./static/pdfs/java-project(hoboard).pdf">View</small></h4>
                     <i class="gray">비트캠프</i>
                     <ul class="pt-3">
@@ -491,7 +491,7 @@
                     <h4 class="gray">2019. 05 ~ 2019. 07</h4>
                   </div>
                   <div class="col-md-9 col-12">
-                    <h4>갤럭시펀드 런칭<small class="ml-5 blue" onclick='openPdf($(this).data())'
+                    <h4>갤럭시펀드 런칭<small class="ml-5 blue views" onclick='openPdf($(this).data())'
                         data-url="./static/pdfs/galaxyfund-web_upload.pdf">View</small></h4>
                     <i class="gray">머스트핀테크(MustFintech)</i>
                     <ul class="pt-3">
@@ -506,7 +506,7 @@
                     <h4 class="gray">2019. 07 ~ 2019. 09</h4>
                   </div>
                   <div class="col-md-9 col-12">
-                    <h4>24프로펀딩 런칭<small class="ml-5 blue" onclick='openPdf($(this).data())'
+                    <h4>24프로펀딩 런칭<small class="ml-5 blue views" onclick='openPdf($(this).data())'
                         data-url="./static/pdfs/24profunding-web_upload.pdf">View</small></h4>
                     <i class="gray">머스트핀테크(MustFintech)</i>
                     <ul class="pt-3">
@@ -521,7 +521,7 @@
                     <h4 class="gray">2019. 12 ~ 2020. 03</h4>
                   </div>
                   <div class="col-md-9 col-12">
-                    <h4>E-scored.com 런칭<small class="ml-5 blue"
+                    <h4>E-scored.com 런칭<small class="ml-5 blue views"
                         onclick='window.open("http://e-scored.com", "_blank")'>View</small></h4>
                     <i class="gray">토이프로젝트</i>
                     <ul class="pt-3">
@@ -538,7 +538,7 @@
                     <h4 class="gray">2019. 10 ~ 2020. 01</h4>
                   </div>
                   <div class="col-md-9 col-12">
-                    <h4>라이브펀딩 런칭<small class="ml-5 blue"
+                    <h4>라이브펀딩 런칭<small class="ml-5 blue views"
                         onclick='window.open("https://livefunding.co.kr", "_blank")'>View</small></h4>
                     <i class="gray">머스트핀테크(MustFintech)</i>
                     <ul class="pt-3">
@@ -555,7 +555,7 @@
                     <h4 class="gray">2020. 02 ~ 2020. 03</h4>
                   </div>
                   <div class="col-md-9 col-12">
-                    <h4>나이스 펀딩 런칭<small class="ml-5 blue" onclick='openPdf($(this).data())'
+                    <h4>나이스 펀딩 런칭<small class="ml-5 blue views" onclick='openPdf($(this).data())'
                         data-url="./static/pdfs/nicefunding-web_upload.pdf">View</small></h4>
                     <i class="gray">머스트핀테크(MustFintech)</i>
                     <ul class="pt-3">
@@ -570,7 +570,7 @@
                     <h4 class="gray">2019. 05 ~ 2019. 07</h4>
                   </div>
                   <div class="col-md-9 col-12">
-                    <h4>강앤리크라우드 런칭<small class="ml-5 blue"
+                    <h4>강앤리크라우드 런칭<small class="ml-5 blue views"
                         onclick='window.open("https://knlcrowd.com/", "_blank")'>View</small></h4>
                     <i class="gray">머스트핀테크(MustFintech)</i>
                     <ul class="pt-3">
@@ -661,17 +661,15 @@
   </main>
   <script>
     $(document).ready(function () {
-      var today = new Date();
+      var today = new Date(2020, 11, 09);
       var y, m, d;
       y = today.getFullYear();
-      m = today.getMonth()+1;
+      m = today.getMonth();
       d = today.getDate();
-
-      var lastUpdateDay = new Date(2020, 11, 04);
+      var lastUpdateDay = new Date(2020, 11, 4);
       var passedTime = today.getTime() - lastUpdateDay.getTime();
       var passedDate = (Math.floor(passedTime/(24*60*60*1000)) > 0) ? Math.floor(passedTime/(24*60*60*1000)) : 0;
       $("#passedTime").html( y+". "+m+". "+d+".(D+"+passedDate+")" );
-      // 2020. 10. 16(D+20)
     })
   </script>
 </body>
